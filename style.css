@@ -1,0 +1,281 @@
+/* ======= JEFF'S CSS RESET ======= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ========== OUR STYLES ========== */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+.page-section {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.content-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+h4 {
+  text-align: start;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  color: #7D5BA6;
+  text-decoration-color: #7D5BA6;
+}
+
+a p {
+  color: #7D5BA6;
+  font-weight: bold;
+}
+
+li {
+  margin: 10px 0;
+}
+
+ol > li > ul > li {
+  margin: 0;
+}
+
+ul > li {
+  list-style-type: none;
+  text-indent: -1em;
+}
+
+.li-bullet {
+  list-style-type:circle;
+}
+
+.li_solution:before {
+  /* content reference from https://www.toptal.com/designers/htmlarrows/arrows/right-arrow/ */
+  content: "\2192";
+  padding-right: 0.2rem;
+}
+
+.feedback:before {
+  content: "💡";
+  padding-right: 0.2rem;
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.feedback-img-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.feedback-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.img-wrapper > a {
+  width: 50%;
+  text-align: center;
+}
+
+.img-wrapper img {
+  width: 100%;
+}
+
+.img-wrapper > a.full-width {
+  width: 100%;
+}
+
+.column-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.iframe-wrapper {
+  width: 100%;
+}
+
+.iframe-wrapper > iframe {
+  width: 100%;
+  min-height: 500px;
+}
+
+.video-wrapper {
+  margin-bottom: 50px;
+  width: 50%;
+}
+
+.video-wrapper > h4 {
+  margin: 15px 0;
+}
+
+.user-testing-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* sorry I don't know why the grid is not working. If you have a better layout idea than grid feel free to use it */
+.feedback-wrapper {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto; */
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+.feedback-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.feedback-text,
+.feedback-img {
+  width: 50%;
+}
+
+.project-intro{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.overview{
+  width: 65%;
+  padding-right: 9rem;
+}
+
+.basic-info{
+  width:35%;
+  padding-top: 3rem;
+}
+
+.aspect-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.aspect{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.choice{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 1rem;
+  /* align-items: center; */
+}
+
+.choice > h4 {
+  text-align: center;
+}
+
+.icon{
+  width: 8rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.none{
+  list-style: none;
+}
+
+.thanks{
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .feedback-text,
+  .feedback-img {
+    width: 100%;
+  }
+}

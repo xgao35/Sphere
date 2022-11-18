@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterative Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+    <div class="content-wrapper">
+        <div class="page-section">
+            <h1>Sphere</h1>
+            <div class="project-intro">
+                <div class="overview">
+                    <h2>Overview</h2>
+                    <p><a href="https://www.ycombinator.com/companies/sphere" target="_blank">Sphere</a> is a startup that aims to become a decentralized corporate university that improves employees' functional skills by providing them with 3-week livestream courses instructed by field experts. In my UI/UX course, each team is tasked to iteratively design a piece of user experience for a startup's product, without seeing their actual product. With a passion for education technology, my team chose Sphere. </p>
+                </div>
+                <div class="basic-info">
+                    <ul>
+                        <li>Project Type: course team project</li>
+                        <li>Time: Oct 2022 - Nov 2022</li>
+                        <li>Role: Designer</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <!-- <h2>Startup Introduction</h2>
+            <div class="intro-wrapper">
+                <p>The goal of this project was to design a prototype of an interface for a startup.</p>
+                <ul>
+                    <li><b>Overview:</b> <a href="https://www.ycombinator.com/companies/sphere"
+                            target="_blank">Sphere</a>
+                        is a online education platform that allows employors to assign employees
+                        3-week livestream courses
+                        instructed by experts in the field. Through Sphere, employees can learn functional skills to
+                        apply
+                        to their work, submit online assignments, and network with fellow students and instructors.</li>
+                    <li><b>Type of interface:</b> mobile</li>
+                    <li><b>Users:</b> employees who take courses through Sphere</li>
+                    <li><b>Impact:</b> allow users to navigate easily between livestreams, assignments, and networking
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+
+        <div class="page-section">
+            <div class="summary">
+                <p>Based on Sphere's mission statement, we summed up the three most important aspects of their product: </p>
+                <div class="aspect-list">
+                    <div class="aspect">
+                        <img class="icon" src="assets/live.png" alt="network of figures">
+                        <h4>Livestream courses</h4>
+                    </div>
+                    <div class="aspect">
+                        <img class="icon" src="assets/organizer.png" alt="network of figures">
+                        <h4>Organization of material</h4>
+                    </div>
+                    <div class="aspect">
+                        <img class="icon" src="assets/networking.png" alt="network of figures">
+                        <!-- <a href="https://www.flaticon.com/free-icons/teamwork" title="teamwork icons">Teamwork icons created by Becris - Flaticon</a> -->
+                        <h4>Networking</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="page-section">
+            <h2>Sketching & Wireframing</h2>
+            <h3>Brainstorm Sketching</h3>
+            <p>To start off, each of our four group members did 3 sketches of 3 main screens for the app:</p>
+            <ol>
+                <li class="li-bullet">Home page <i>(left column)</i></li>
+                <li class="li-bullet">Course overview page <i>(middle column)</i></li>
+                <li class="li-bullet">Networking/chat page <i>(right column)</i></li>
+            </ol>
+            <div class="img-wrapper">
+                <a href="./assets/sketch1.PNG" target="_blank">
+                    <img src="./assets/sketch1.PNG" alt="brainstorm sketch 1">
+                </a>
+                <a href="./assets/sketch2.jpg" target="_blank">
+                    <img src="./assets/sketch2.jpg" alt="brainstorm sketch 2">
+                </a>
+                <a href="./assets/sketch3.jpeg" target="_blank">
+                    <img src="./assets/sketch3.jpeg" alt="brainstorm sketch 3">
+                </a>
+                <a href="./assets/sketch4.png" target="_blank">
+                    <img src="./assets/sketch4.png" alt="brainstorm sketch 4">
+                </a>
+            </div>
+            
+                <p>Through discussion, we decided to keep these design choices to target Sphere's mission statement:</p>
+            <div class="choice-list">
+                <div class="choice">
+                    <h4>Livestream Courses</h4>
+                    <ol>
+                        <li>Notify users through the homepage when courses are livestreaming </li>
+                            <ol>
+                                <li class="li-bullet">So we can give users easy access to the livestream page and maximize user attendence to livestreams</li>
+                            </ol>
+                        <li>Provide users with live transcript and chat during livestream</li>
+                        <ol>
+                            <li class="li-bullet">So livestream content can be more accessible, and users can discuss with instructor and classmates </li>
+                        </ol>
+                    </ol>
+                </div>
+                <div class="choice">
+                    <h4>Organization of Material</h4>
+                    <ol>
+                        <li>Organize lectures by recency on the homepage and by livestream date on course overview page </li>
+                            <ol>
+                                <li class="li-bullet">So users can access their last viewed lectures with ease, and they can find other lectures in an organized manner</li>
+                            </ol>
+                        <li>Provide users with a clear list of deadline and assignments in progress both on the homepage and in individual course overview pages</li>
+                            <ol>
+                                <li class="li-bullet">So users can easily track their assignment progress and organize their work efficiently</li>
+                            </ol>
+                        <li>Use progress bars to quantify progress when possible </li>
+                    </ol>
+                </div>
+                <div class="choice">
+                    <h4>Networking</h4>
+                    <ol>
+                        <li>Provide information on chat page about contact's occupation, employer, and common courses (if applicable) </li>
+                            <ol>
+                                <li class="li-bullet">So users can engage in course-related conversations easily</li>
+                            </ol>
+                    </ol>
+                </div>
+
+            </div>
+     
+            <h3>Low Fidelity Mockup</h3>
+            <p>With these design choices in mind, we combined our sketches to create the wireframes of the main app pages</p>
+            <div class="img-wrapper">
+                <a href="https://www.figma.com/file/gWoksOcfzUdoRg4WQ06DZ0/Sphere-LoFi" class="full-width"
+                    target="_blank">
+                    <img src=" ./assets/lofi.png" alt="">
+                    <p>Click to view Figma</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="page-section">
+            <h2>High Fidelity Mockups</h2>
+            <h3>Mockup 1.0</h3>
+            <p>From our wireframe, we created the first iteration of our design</p>
+            <div class="img-wrapper">
+                <a href="https://www.figma.com/proto/g1SMNdYFj7zdX5sYLOlz8z/Sphere-HiFi-1.0?scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A1277&node-id=1%3A1277"
+                    class="full-width" target="_blank">
+                    <img src=" ./assets/hifi_1.png" alt="">
+                    <p>Click to view Figma</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="page-section">
+            <h3>Addressing Peer Feedback</h3>
+            <p>We presented the first iteration of our propotype to peers, who gave us feedback after navigating through the prototype. 
+            </p>
+            <p>Here is a summary of the feedback that we received, and what we did to address these feedback.</p>
+            <div class="feedback-wrapper">
+                <div class="feedback-item">
+                    <div class="feedback-text">
+                        <h4>Homepage</h4>
+                        <ul>
+                            <li class="feedback">The chat-related notification looks too similar to course
+                                related notification. Maybe they should have different colors?</li>
+                            <ul>
+                                <li class="li_solution">Move message notification to the nav bar, so only course related
+                                    notifications show up on the homepage</li>
+                            </ul>
+                            <li class="feedback">The wording of "2/3 In progress" is too vague, since users don't know
+                                if it
+                                is
+                                referring to total number of courses or assignments</li>
+                            <ul>
+                                <li class="li_solution">Change the wording to "1/3 courses completed"</li>
+                                <li class="li_solution">Add shadows to make it clearer that the dark purple signifies
+                                    the
+                                    completed portion</li>
+                            </ul>
+                            <li class="feedback">Rather than a list of things in progress, the user would more likely
+                                want
+                                to
+                                directly see a list of due dates</li>
+                            <ul>
+                                <li class="li_solution">Replace the "In Progress" section with "Today", which provides a
+                                    list of
+                                    due dates</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="feedback-img">
+                        <div class="feedback-img-wrapper">
+                            <a href="./assets/homepagev1,2.png" target="_blank">
+                                <img src="./assets/homepagev1,2.png" alt="homepage v1,2">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="feedback-item">
+                    <div class="feedback-text">
+                        <h4>Navigation Bar</h4>
+                        <ul>
+                            <li class="feedback">It is a bit unclear that the second icon leads to "my courses"</li>
+                            <ul>
+                                <li class="li_solution">Change the icon to an open book</li>
+                            </ul>
+                            <li class="feedback">Too much purple in the nav bar might distract attention from the main
+                                page
+                            </li>
+                            <ul>
+                                <li class="li_solution">Restyle the nav bar background color to white and use icon color
+                                    to
+                                    indicate selection</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="feedback-img">
+                        <div class="feedback-img-wrapper">
+                            <a href="./assets/navbarv1,2.png" target="_blank">
+                                <img src="./assets/navbarv1,2.png" alt="navbar v1,2">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="feedback-item">
+                    <div class="feedback-text">
+                        <h4>Course Page</h4>
+                        <ul>
+                            <li class="feedback">It can be very convenient if the user can directly enter into the
+                                course
+                                livestream from the course page</li>
+                            <ul>
+                                <li class="li_solution">Add "Class is Streaming. Join now!" button that appears when the
+                                    course
+                                    is streaming </li>
+                            </ul>
+                            <li class="feedback">The purple background of the overview blurb is similar to clickable
+                                buttons,
+                                which can be misleading for the users</li>
+                            <ul>
+                                <li class="li_solution">Change the background of the overview blurb to grey to make it
+                                    look
+                                    less
+                                    interactable</li>
+                            </ul>
+                            <li class="feedback">The "Assignments" section can be made clearer by creating more
+                                distinction
+                                between items that are "not started" and "in progress</li>
+                            <ul>
+                                <li class="li_solution">Since it can be messy to define "not started" and "in progress",
+                                    we
+                                    combine these two conditions into "incomplete"</li>
+                            </ul>
+                            <li class="feedback">The chat page contains chats with classmates, but where can users start
+                                chat
+                                with a classmate?</li>
+                            <ul>
+                                <li class="li_solution">Add classmate profiles to the end of the course page</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="feedback-img">
+                        <div class="feedback-img-wrapper">
+                            <a href="./assets/coursepagev1,2.png" target="_blank">
+                                <img src="./assets/coursepagev1,2.png" alt="coursepage v1,2">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="feedback-item">
+                    <div class="feedback-text">
+                        <h4>Chat Pages</h4>
+                        <ul>
+                            <li class="feedback">The users might want to be able to see who are instructors and who are
+                                students
+                                from the chat pages</li>
+                            <ul>
+                                <li class="li_solution">Add star next to instructor names in both the chat page and course page
+                                </li>
+                                <li class="li_solution">Add "student" or "instructor" under the person's name in the
+                                    dialogue
+                                    page</li>
+                            </ul>
+                            <li class="feedback">It can be easier for the users to conduct course-related conversations
+                                if
+                                the
+                                they can access the course page directly from the chat page</li>
+                            <ul>
+                                <li class="li_solution">Add link to course page from the "start a conversation" prompt
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="feedback-img">
+                        <div class="feedback-img-wrapper">
+                            <a href="./assets/chatpagev1,2.png" target="_blank">
+                                <img src="./assets/chatpagev1,2.png" alt="chatpages v1,2">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section">
+            <h3>Mockup 2.0</h3>
+            <p>Using feedback from studio, we made adjustments to our prototype. </p>
+            <div class="img-wrapper">
+                <a href="https://www.figma.com/proto/iOdPWqIsDmFfXbBJ5CRRhq/Sphere-HiFi-2.0?scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A1282&node-id=1%3A1282"
+                    class="full-width" target="_blank">
+                    <img src=" ./assets/hifi_2.png" alt="">
+                    <p>Click to view Figma</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="page-section">
+            <h3>User Testing</h3>
+            <p>We submitted our revised prototype to UserTesting.com and received feedback from 3 testers. We provided
+                them with some instructions as well as post-test questions to get insight on their opinions.
+            </p>
+            <p><b>Task instructions: </b> Find out who the instructor for ENGN1010 is and send them a message.</p>
+
+            <div class="user-testing-wrapper">
+            <div class="video-wrapper">
+                <h4><a href="./assets/test1.mp4">User 1</a> Behavior Summary </h4>
+                <!-- <video src="./assets/test1.mp4" controls></video> -->
+                <ol>
+                    <li>read over <b>homepage</b></li>
+                    <li>noticed chat icon in nav bar and clicked to go to <b>direct messages</b></li>
+                    <li>returned to <b>homepage</b> to find instructor</li>
+                    <li>clicked book icon to go to <b>courses page</b></li>
+                    <li>clicked on ENGN1010 course to go to <b>course overview page</b></li>
+                    <li>found the instructor! </li>
+                    <li>tried to click email option, then clicked <b>direct message</b> to open chat</li>
+                    <li>success! But the user was unsure if the prototype should allow them to actually send a message</li>
+                </ol>
+                </p>
+            </div>
+
+            <div class="video-wrapper">
+                <h4><a href="./assets/test2.mp4">User 2</a> Behavior Summary </h4>
+                <ol>
+                    <li>tried to click lecture under "Today" section on <b>homepage</b></li>
+                    <li>clicked notification to join <b>livestream</b></li>
+                    <li>tried to find instructor on livestream page</li>
+                    <li>returned to <b>homepage</b> and clicked on "Course Progress" graphic to go to <b>courses page</b></li>
+                    <li>tried to find instructor listed under course name</li>
+                    <li>went to <b>direct messages</b> and clicked on the correct chat by chance</li>
+                    <li>returned to <b>courses overview page</b> and found instructor. Success!</li>
+                </ol>
+                </p>
+            </div>
+
+            <div class="video-wrapper">
+                <h4><a href="./assets/test3.mp4">User 3</a> Behavior Summary</h4>
+                <ol>
+                    <li>read over <b>homepage</b></li>
+                    <li>clicked on book to go to <b>my courses</b></li>
+                    <li>clicked on <b>course overview page</b></li>
+                    <li>found instructor and noticed direct message button but chose to access <b>direct messages</b> through nav bar
+                    </li>
+                    <li>clicked on instructor name to go to correct chat. Success!</li>
+                </ol>
+                </p>
+            </div>
+        </div>
+        </div>
+
+        <div class="page-section">
+            <h3>Post-test questions</h3>
+            <ol>
+                <li>What frustrated you most about this app?
+                    <ol>
+                        <li class="none">User 1: I would say the lack of labels for the icons, which made navigation more exploratory rather
+                            than
+                            self-explanatory</li>
+                        <li class="none">User 2: Lack of words under the four icons at the bottom of the screen</li>
+                        <li class="none">User 3: Nothing, everything was easy to find and use</li>
+                    </ol>
+                </li>
+
+                <li>Were there any interactive elements that were not immediately intuitive to you?
+                    <ol>
+                        <li class="none">User 1: No. I believe the icons at the bottom were the only confusing part to me</li>
+                        <li class="none">User 2: All available functions worked well</li>
+                        <li class="none">User 3: No, everything was self-explanatory. Anyone who is used to using a
+                            computer/smartphone should learn how to use this app pretty quickly</li>
+                    </ol>
+                </li>
+
+                <li>What did you like about the app?
+                    <ol>
+                        <li class="none">User 1: The direct links to livestreams and direct messages</li>
+                        <li class="none">User 2: The static menu on the bottom is really useful and prevents the user from being lost</li>
+                        <li class="none">User 3: The simplicity of the design. I wish Canvas is like this</li>
+                    </ol>
+                </li>
+            </ol>
+            <p>Overall, all three users completed the task, and they find the app easy to navigate.</p>
+        </div>
+
+        <div class="page-section">
+            <h3>Addressing User Feedback</h3>
+            <div class="user-feedback-text">
+                <ul>
+                    <li class="feedback">One user was confused about the company name listed under the courses in my courses page. They expect to see instructor name rather than their own company name</li>
+                    <ul>
+                        <li class="li_solution">List instructor name under courses instead
+                        </li>
+                    </ul>
+                    <li class="feedback">All users were confused by the lack of labels in the navigation bar to varying degrees</li>
+                    <ul>
+                        <li class="li_solution">Add labels to navigation bar
+                        </li>
+                    </ul>
+                    <li class="feedback">Even though the star icon appears next to the instructor in the course overview page to signal its meaning, users do not intuitively interprete it as "instructor", and one user thought it means a favorited contact</li>
+                    <ul>
+                        <li class="li_solution">Get rid of the star and clearly label instructors with "instr." instead
+                        </li>
+                    </ul>
+                    <li class="feedback">Users who directly entered the livestream from the homepage was a bit lost because there is no link between the livestream page to the course overview page</li>
+                    <ul>
+                        <li class="li_solution">Add link that navigates from livestream to course overview page
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+
+        <div class="page-section">
+            <h3>Mockup 3.0</h3>
+            <p>Addressing these user feedback, we produced the third iteration of the prototype </p>
+            <div class="img-wrapper">
+                <a href="https://www.figma.com/proto/UQQDwvJ1NN4RIoWJ87S183/Sphere-HiFi-3.0?scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A1282&node-id=1%3A1282"
+                    class="full-width" target="_blank">
+                    <img src=" ./assets/hifi_3.png" alt="">
+                    <p>Click to view Figma</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="page-section">
+            <h3>Conclusions & Lessons </h3>
+            <ol>
+                <li><b>Feedback is important in making sure that every aspect of the design is intentional.</b> In this project, peer and user feedback for the first two mockups picked out many design choices that were not thoroughly considered from a user perspective. It is impossible to design completely without a bias towards what makes sense for oneself, so thinking iteratively with feedback along the way is extremely important.</li>
+                <li><b>User logic can be very different from the designer's logic.</b> The user testing videos showed me this principle in action for the first time. All of the users completed the assigned task from vastly different routes. For instance, to message the instructor, one user found the "direct message" button, but chose a more complicated route of navigating to the direct message page via finding the same icon in the navigation bar. To address this variety of user navigation logic, the designer must consider multiple routes to accomplish the same task.</li>
+                <li><b>Information needs to be very obvious for users to learn. </b>The design of the instructor star icon and navigation bar without labels were not intuitive for the users because the presentation of information is not immediately significant enough. People have a limited scope of attention, so to make the user's first encounter with the product is as easy as possible, they should not be expected to learn icons and navigations unless the instructions are exceedingly clear. </li>
+            </ol>
+        </div>
+
+        <div class="page-section">
+            <h3 class="thanks">Thank you for reading!</h3>
+        </div>
+</body>
+
+</html>
